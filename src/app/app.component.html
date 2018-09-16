@@ -14,4 +14,18 @@
       </ol>
     </div>
   </div>
+  <div class="row">
+      <div class="col-xs-12">
+          <app-game-control (numberCreatedEvent)="displayNumberCreated($event)"></app-game-control>
+      </div>
+  </div>
+  <hr>
+  <div class="row">
+      <div class="col-xs-12">
+          <div class="panel-default" *ngFor="let number of numbers" [ngStyle]="getBackgroundColor(number)">
+                <app-even *ngIf="number % 2 === 0" [ngClass]="getClass(number)"><p>{{ number }}</p></app-even>
+                <app-odd *ngIf="number % 2 === 1" [ngClass]="getClass(number)"><p>{{ number }}</p></app-odd>
+          </div>         
+      </div>
+  </div>
 </div>

@@ -1,0 +1,11 @@
+.even {
+    background-color: beige;
+    color: blue;
+    font-weight: bold;
+}
+
+.odd {
+    background-color: burlywood;
+    color: red;
+    font-style: italic;
+}
