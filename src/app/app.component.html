@@ -23,8 +23,8 @@
   <div class="row">
       <div class="col-xs-12">
           <div class="panel-default" *ngFor="let number of numbers" [ngStyle]="getBackgroundColor(number)">
-                <app-even *ngIf="number % 2 === 0" [ngClass]="getClass(number)"><p>{{ number }}</p></app-even>
-                <app-odd *ngIf="number % 2 === 1" [ngClass]="getClass(number)"><p>{{ number }}</p></app-odd>
+                <app-even *ngIf="number % 2 === 0" [ngClass]="getClass(number)"><p>Even - {{ number }}</p></app-even>
+                <app-odd *ngIf="number % 2 === 1" [ngClass]="getClass(number)"><p>Odd - {{ number }}</p></app-odd>
           </div>         
       </div>
   </div>
